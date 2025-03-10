@@ -1,66 +1,72 @@
+/* Apply grid to the body */
 body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr 250px;
-    grid-template-areas: 
-        "header header"
-        "nav nav"
-        "main aside"
-        "footer footer";
+    grid-template-columns: 1fr;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Header styling */
 header {
-    grid-area: header;
-    background: #333;
+    background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 1rem;
     text-align: left;
 }
 
+/* Navigation bar using Flexbox */
 nav {
-    grid-area: nav;
-    background: black;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
+    background-color: black;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    padding: 0;
+    justify-content: space-around;
+    list-style-type: none;
     margin: 0;
+    padding: 10px 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    color: white;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
+/* Grid container for main content */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+/* Main content area */
 main {
-    grid-area: main;
-    background: #ccc;
+    background-color: lightgray;
     padding: 20px;
+    flex-grow: 1;
 }
 
+/* Sidebar */
 aside {
-    grid-area: aside;
-    background: white;
+    background-color: white;
     padding: 20px;
 }
 
+/* Footer */
 footer {
-    grid-area: footer;
-    background: #333;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 100px;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 100;
 }
