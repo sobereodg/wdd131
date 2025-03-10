@@ -1,8 +1,9 @@
+/*universal selector */
+* {
+    margin: 0%;
+}
 /* Apply grid to the body */
 body {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,12 +13,13 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 1rem;
     text-align: left;
+   
 }
 
 /* Navigation bar using Flexbox */
 nav {
+    margin-top: 1rem;
     background-color: black;
 }
 
