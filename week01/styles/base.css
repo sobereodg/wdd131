@@ -47,14 +47,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    justify-content: space-evenly;
-}
-
 main {
     max-width: 900px;
     margin: 20px auto;
