@@ -1,0 +1,116 @@
+/* Global Reset and Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    background-color: #36032b;
+    color: white;
+    margin: 0;
+    padding: 1.5rem 1rem;
+  }
+  
+  /* Main Form Container */
+  main {
+    padding: 0;
+  }
+  
+  /* Form Styling */
+  form {
+    background-color: #d4cbd4;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  /* Labels and Inputs */
+  label {
+    display: block;
+    margin: 1rem 0 0.3rem;
+    font-weight: bold;
+  }
+  
+  .required::after {
+    content: " *";
+    color: red;
+  }
+  
+  .optional {
+    font-weight: bold;
+  }
+  
+  select,
+  input[type="date"],
+  textarea,
+  input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #999;
+    font-size: 1rem;
+  }
+  
+  /* Radio and Checkbox Fieldsets */
+  fieldset {
+    margin: 1rem 0;
+    border: none;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  /* Rating Stars */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+    transform: scale(1.4);
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Submit Button */
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 2px solid #222;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ddd;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #36032b;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0.3rem;
+  }
+  
